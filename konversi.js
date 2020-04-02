@@ -19,16 +19,13 @@ const KG_TO_PON = () => {
     window.alert(HASIL)
 }
 
-// function  KONVERSI (){
-//     let dolar = parseFloat(document.getElementById("dolar").value)
-//     let hasil = dolar * 17000
-//     document.getElementById("hasil").value = hasil
-// }
-
-document.addEventListener("click", function KONVERSI(){
+function  KONVERSI (event){
+    event.preventDefault()
+    debugger;
     let dolar = parseFloat(document.getElementById("dolar").value)
     let hasil = dolar * 17000
     document.getElementById("hasil").value = hasil
+}
 
-})
+      document.getElementById("formSubmitId").addEventListener("submit", KONVERSI)
 

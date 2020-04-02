@@ -17,17 +17,22 @@
         </ul>
         
 
-        <script src="./konversi.js"></script>
+        
     </label>
     <div class="KONVERSI">
         
-            <form >
+    <form name="formSubmit" id="formSubmitId" >
                 <h1>konversi mata uang</h1>
-                <input type="text"  id="dolar">
-                <input type="text"  id="hasil">
-                <button onclick="KONVERSI()"></button>
+                <h5>rupiah</h5>
+                <input type="number"  id="dolar" name="dolar" value="0">
+                <h5>Dolar</h5>
+                <input type="text"  id="hasil" name="hasil">
+                <button type="submit" id="myBtn" name="btnConvert">conversi</button>
+               
             </form>
         </label>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./konversi.js"></script>
 </body>
 </html>
